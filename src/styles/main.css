@@ -184,3 +184,66 @@ tr:hover td { background: #f8faff; }
 }
 .result-toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
 .result-toolbar .count { font-size: 13px; color: var(--text-sub); }
+
+/* ===== 访客网站外壳（无"前台"标记） ===== */
+.public-site { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); }
+.public-header {
+  background: var(--panel); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 20;
+}
+.public-header-inner {
+  max-width: 1160px; margin: 0 auto; padding: 0 24px; height: 64px;
+  display: flex; align-items: center; gap: 28px;
+}
+.public-brand {
+  display: flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 600;
+  color: var(--text); text-decoration: none; white-space: nowrap;
+}
+.public-brand-icon { font-size: 22px; }
+.public-nav { display: flex; gap: 6px; }
+.public-nav-link {
+  padding: 8px 14px; border-radius: 8px; text-decoration: none;
+  color: var(--text-sub); font-size: 14px;
+}
+.public-nav-link:hover { background: var(--primary-light); color: var(--primary); }
+.public-nav-link.active { color: var(--primary); background: var(--primary-light); font-weight: 500; }
+.btn-login {
+  margin-left: auto; padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 8px; background: var(--panel); color: var(--text);
+  font-size: 13px; cursor: pointer; transition: all .15s;
+}
+.btn-login:hover { border-color: var(--primary); color: var(--primary); }
+.public-main { flex: 1; width: 100%; max-width: 1160px; margin: 0 auto; padding: 24px; }
+.public-footer {
+  text-align: center; padding: 20px; font-size: 12px; color: var(--text-sub);
+  border-top: 1px solid var(--border); background: var(--panel);
+}
+.btn-logout {
+  margin-left: 12px; padding: 5px 12px; border: 1px solid var(--border);
+  border-radius: 8px; background: var(--panel); color: var(--text-sub);
+  font-size: 12px; cursor: pointer;
+}
+.btn-logout:hover { border-color: var(--red); color: var(--red); }
+
+/* ===== 登录弹窗 ===== */
+.modal-mask {
+  position: fixed; inset: 0; background: rgba(15,23,42,.55);
+  display: flex; align-items: center; justify-content: center; z-index: 100;
+}
+.modal {
+  width: 380px; max-width: calc(100vw - 40px); background: var(--panel);
+  border-radius: 14px; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.2);
+}
+.modal-title { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+.modal-sub { font-size: 13px; color: var(--text-sub); margin-bottom: 20px; }
+.modal input {
+  width: 100%; padding: 10px 12px; margin-bottom: 12px; border: 1px solid var(--border);
+  border-radius: 8px; font-size: 14px; outline: none;
+}
+.modal input:focus { border-color: var(--primary); }
+.modal-error { font-size: 12px; color: var(--red); margin-bottom: 12px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+.modal-hint {
+  margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--border);
+  font-size: 12px; color: var(--text-sub); line-height: 1.6;
+}
