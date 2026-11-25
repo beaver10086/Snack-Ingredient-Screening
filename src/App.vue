@@ -4,7 +4,8 @@ import { useRoute } from 'vue-router'
 import { NAV } from './router'
 
 const route = useRoute()
-const pageTitle = computed(() => route.meta.title || '仪表盘')
+const pageTitle = computed(() => route.meta.title || '帮我筛选')
+const isConsumer = computed(() => route.meta.zone === 'consumer')
 </script>
 
 <template>
@@ -39,7 +40,11 @@ const pageTitle = computed(() => route.meta.title || '仪表盘')
     <main class="main">
       <header class="topbar">
         <h1>{{ pageTitle }}</h1>
-        <div class="topbar-right"><span class="user-badge">👤 分析员</span></div>
+        <div class="topbar-right">
+          <span class="zone-badge" :class="isConsumer ? 'zone-consumer' : 'zone-admin'">
+            {{ isConsumer ? '消费者视角 · 免登录' : '后台视角 · 分析员' }}
+          </span>
+        </div>
       </header>
       <div class="content">
         <router-view />

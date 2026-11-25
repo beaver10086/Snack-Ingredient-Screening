@@ -67,6 +67,7 @@ export const MOCK = {
   ],
 
   // 产品（FR-6.1 检索 / FR-6.2 反向检索 / FR-6.3 对比）
+  // V2.2 新增 FR-9 筛选字段：nutritionNum（数值化，null=未标注）、allergenLabeled（致敏原是否有标注）
   products: [
     {
       id: 1, name: '乐事经典原味薯片 70g', barcode: '7622210449283',
@@ -75,6 +76,7 @@ export const MOCK = {
       ingredients: '马铃薯、植物油、经典原味调味料（含5\'-呈味核苷酸二钠）、TBHQ',
       additives: ['TBHQ', '5\'-呈味核苷酸二钠'], allergens: [],
       nutrition: { energy: '548 kcal/100g', fat: '32g', carbs: '53g', sodium: '520mg' },
+      nutritionNum: { sodium: 520, carbs: 53, sugar: null }, allergenLabeled: true,
     },
     {
       id: 2, name: '卫龙辣条大面筋 106g', barcode: '6920202888888',
@@ -83,6 +85,7 @@ export const MOCK = {
       ingredients: '小麦粉、水、植物油、食用盐、白砂糖、辣椒、食品添加剂（防腐剂（脱氢乙酸钠）、甜味剂（三氯蔗糖））、食用香精',
       additives: ['脱氢乙酸钠', '三氯蔗糖'], allergens: ['麸质谷物', '大豆'],
       nutrition: { energy: '412 kcal/100g', fat: '22g', carbs: '48g', sodium: '980mg' },
+      nutritionNum: { sodium: 980, carbs: 48, sugar: 12 }, allergenLabeled: true,
     },
     {
       id: 3, name: '奥利奥夹心饼干 97g', barcode: '6901668044444',
@@ -91,6 +94,7 @@ export const MOCK = {
       ingredients: '小麦粉、白砂糖、植物油、可可粉、葡萄糖浆、全脂乳粉、食品添加剂（膨松剂（碳酸氢钠）、乳化剂（大豆磷脂））、食盐',
       additives: ['碳酸氢钠', '大豆磷脂'], allergens: ['麸质谷物', '乳', '大豆'],
       nutrition: { energy: '480 kcal/100g', fat: '20g', carbs: '67g', sodium: '380mg' },
+      nutritionNum: { sodium: 380, carbs: 67, sugar: 35 }, allergenLabeled: true,
     },
     {
       id: 4, name: '沃隆每日坚果 25g', barcode: '6971234567890',
@@ -99,6 +103,7 @@ export const MOCK = {
       ingredients: '扁桃仁、腰果、核桃仁、蔓越莓干、蓝莓干',
       additives: [], allergens: ['坚果'],
       nutrition: { energy: '590 kcal/100g', fat: '48g', carbs: '28g', sodium: '5mg' },
+      nutritionNum: { sodium: 5, carbs: 28, sugar: null }, allergenLabeled: true,
     },
     {
       id: 5, name: '大白兔奶糖 114g', barcode: '6901234599999',
@@ -107,14 +112,16 @@ export const MOCK = {
       ingredients: '白砂糖、奶粉、氢化植物油、明胶、食品添加剂（乳化剂（单硬脂酸甘油酯）、食用香精）',
       additives: ['单硬脂酸甘油酯'], allergens: ['乳'],
       nutrition: { energy: '410 kcal/100g', fat: '8g', carbs: '78g', sodium: '120mg' },
+      nutritionNum: { sodium: 120, carbs: 78, sugar: 50 }, allergenLabeled: true,
     },
     {
       id: 6, name: '某品牌低糖苏打饼干 100g', barcode: '6901234567001',
       brand: '某品牌', category: '饼干糕点', gb: '07.01',
       sources: 1, ingredientCount: 8, sourceUrl: 'world.openfoodfacts.org/api/v2/search?countries_tags=en:china',
       ingredients: '小麦粉、植物油、食用盐、碳酸氢钠、全麦粉（≥30%）、食用香精',
-      additives: ['碳酸氢钠'], allergens: ['麸质谷物'],
+      additives: ['碳酸氢钠'], allergens: [],
       nutrition: { energy: '430 kcal/100g', fat: '16g', carbs: '62g', sodium: '610mg' },
+      nutritionNum: { sodium: 610, carbs: 62, sugar: 3 }, allergenLabeled: false,
     },
   ],
 
