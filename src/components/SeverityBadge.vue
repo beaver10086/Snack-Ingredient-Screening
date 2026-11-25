@@ -2,12 +2,18 @@
 defineProps({
   text: { type: String, required: true },
 })
-// 与原版 badge() 映射一致：状态/严重程度 → 配色
+// V2.0 三级表述：客观事实 / 知识科普 / 个人提示（NFR-10）
+// 其余为通用状态徽章配色
 const MAP = {
-  '违规': 'b-danger', '失败': 'b-danger', '不合格': 'b-danger',
-  '疑似': 'b-warning', '运行中': 'b-warning', '未复核': 'b-warning',
-  '提示': 'b-info', '成功': 'b-success', '现行': 'b-success', '正常': 'b-success', '确认': 'b-success',
-  '即将实施': 'b-purple', '误报': 'b-gray',
+  // 解读结果三级
+  '客观事实': 'b-info', '知识科普': 'b-purple', '个人提示': 'b-warning',
+  // 通用状态
+  '成功': 'b-success', '启用': 'b-success', '正常': 'b-success', '现行': 'b-success', '确认': 'b-success',
+  '运行中': 'b-warning', '待确认': 'b-warning',
+  '失败': 'b-danger',
+  '停用': 'b-gray',
+  // 关注规则类型
+  '过敏原': 'b-warning', '营养阈值': 'b-info',
 }
 </script>
 

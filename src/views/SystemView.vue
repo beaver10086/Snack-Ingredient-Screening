@@ -1,18 +1,15 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import SeverityBadge from '../components/SeverityBadge.vue'
-import { getUsers, getLogs } from '../api'
+import { getUsers, getLogs, getSchedules } from '../api'
 
 const users = ref([])
 const logs = ref([])
-const schedules = [
-  { type: '增量采集', mode: '定时 · 每日 02:00', next: '2026-10-22 02:00' },
-  { type: '全量筛查', mode: '定时 · 每周一 09:00', next: '2026-10-26 09:00' },
-  { type: '数据备份', mode: '定时 · 每日 03:30', next: '2026-10-22 03:30' },
-]
+const schedules = ref([])
 onMounted(async () => {
   users.value = await getUsers()
   logs.value = await getLogs()
+  schedules.value = await getSchedules()
 })
 </script>
 
@@ -33,7 +30,7 @@ onMounted(async () => {
     </div>
 
     <div class="card">
-      <div class="card-title">任务调度 <span class="sub">FR-8.3 · 采集/清洗/筛查手动或定时触发</span></div>
+      <div class="card-title">任务调度 <span class="sub">FR-8.3 · 采集/解读/备份手动或定时触发</span></div>
       <table>
         <thead><tr><th>任务类型</th><th>调度方式</th><th>下次执行</th></tr></thead>
         <tbody>

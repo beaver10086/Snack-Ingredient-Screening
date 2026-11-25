@@ -2,7 +2,7 @@
   "name": "snack-frontend",
   "private": true,
   "version": "0.1.0",
-  "description": "零食配料数据采集与合规筛查系统 - 前端（高级数据库课程设计）",
+  "description": "零食标签数据与查询系统 - 前端（高级数据库课程大作业）",
   "type": "module",
   "scripts": {
     "dev": "vite",

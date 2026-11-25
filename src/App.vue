@@ -14,8 +14,8 @@ const pageTitle = computed(() => route.meta.title || '仪表盘')
       <div class="logo">
         <span class="logo-icon">🍬</span>
         <div>
-          <div class="logo-title">零食配料筛查系统</div>
-          <div class="logo-sub">高级数据库 · 课程设计</div>
+          <div class="logo-title">零食标签数据与查询系统</div>
+          <div class="logo-sub">基于开放数据 · 高级数据库课程设计</div>
         </div>
       </div>
       <nav class="nav">
@@ -32,7 +32,7 @@ const pageTitle = computed(() => route.meta.title || '仪表盘')
           </router-link>
         </template>
       </nav>
-      <div class="sidebar-footer">数据仅用于课程研究<br>不构成违法定性</div>
+      <div class="sidebar-footer">数据来自公开渠道 · 仅供课程研究<br>客观信息呈现 · 不构成合规判定</div>
     </aside>
 
     <!-- 主内容区 -->
