@@ -1,0 +1,21 @@
+{
+  "name": "snack-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "零食标签数据与查询系统 - 前端（高级数据库课程大作业）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.7"
+  }
+}
