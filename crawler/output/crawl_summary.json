@@ -1,0 +1,71 @@
+{
+  "started_at": "2026-11-26 09:47:37",
+  "finished_at": "2026-11-26 09:48:54",
+  "updated_at": "2026-11-26 09:48:54",
+  "country": "en:china",
+  "page_size": 100,
+  "delay_seconds": 4.0,
+  "categories_requested": [
+    "en:snacks",
+    "en:biscuits",
+    "en:chocolates",
+    "en:candies",
+    "en:nuts",
+    "en:crisps",
+    "en:cookies"
+  ],
+  "categories": {
+    "en:snacks": {
+      "pages_processed": 1,
+      "requests": 0,
+      "failed_requests": 0,
+      "products_received": 5,
+      "new_products": 0,
+      "duplicates": 5,
+      "done": true,
+      "next_page": 2
+    },
+    "en:biscuits": {
+      "pages_processed": 1,
+      "requests": 3,
+      "failed_requests": 2,
+      "products_received": 44,
+      "new_products": 43,
+      "duplicates": 1,
+      "done": true,
+      "next_page": 2
+    },
+    "en:chocolates": {
+      "pages_processed": 1,
+      "requests": 2,
+      "failed_requests": 1,
+      "products_received": 27,
+      "new_products": 27,
+      "duplicates": 0,
+      "done": true,
+      "next_page": 2
+    },
+    "en:candies": {
+      "pages_processed": 1,
+      "requests": 2,
+      "failed_requests": 1,
+      "products_received": 18,
+      "new_products": 18,
+      "duplicates": 0,
+      "done": true,
+      "next_page": 2
+    },
+    "en:nuts": {
+      "pages_processed": 0,
+      "requests": 0,
+      "failed_requests": 0,
+      "products_received": 0,
+      "new_products": 0,
+      "duplicates": 0,
+      "done": false,
+      "next_page": 1
+    }
+  },
+  "total_products_saved": 98,
+  "output_dir": "D:\\大学\\大三上\\Snack-Ingredient-Screening\\crawler\\output"
+}

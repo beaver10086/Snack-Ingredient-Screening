@@ -1,0 +1,61 @@
+2026-11-26 09:46:35 INFO ================================================================
+2026-11-26 09:46:35 INFO Open Food Facts 零食标签采集器
+2026-11-26 09:46:35 INFO 配置文件：D:\大学\大三上\Snack-Ingredient-Screening\crawler\config.json
+2026-11-26 09:46:35 INFO 输出目录：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output
+2026-11-26 09:46:35 INFO 国家/地区标签：en:china
+2026-11-26 09:46:35 INFO 品类：en:snacks
+2026-11-26 09:46:35 INFO 分页大小：5；请求间隔：4.0 秒；最大重试：5 次；退避基准：10.0 秒
+2026-11-26 09:46:35 INFO User-Agent：SnackDB-CourseProject/1.0 (student course project; contact: 2482799022@qq.com)
+2026-11-26 09:46:35 INFO ================================================================
+2026-11-26 09:46:35 INFO [en:snacks] 请求第 1 页：https://world.openfoodfacts.org/api/v2/search?categories_tags=en:snacks&countries_tags=en:china&page_size=5&page=1&fields=code,product_name,product_name_zh,generic_name,brands,categories_tags,ingredients_text,ingredients_text_zh,allergens_tags,additives_tags,nutriments,quantity,serving_size,url,last_modified_t,countries_tags
+2026-11-26 09:46:36 WARNING     HTTP 503，10.9 秒后重试（第 1/5 次）
+2026-11-26 09:46:50 INFO     请求成功：HTTP 200，用时 3.1 秒
+2026-11-26 09:46:50 INFO [en:snacks] 第 1 页完成：收到 5 条，新增 5 条，重复 0 条，累计唯一产品 5 条
+2026-11-26 09:46:54 INFO [en:snacks] 请求第 2 页：https://world.openfoodfacts.org/api/v2/search?categories_tags=en:snacks&countries_tags=en:china&page_size=5&page=2&fields=code,product_name,product_name_zh,generic_name,brands,categories_tags,ingredients_text,ingredients_text_zh,allergens_tags,additives_tags,nutriments,quantity,serving_size,url,last_modified_t,countries_tags
+2026-11-26 09:46:55 WARNING     HTTP 503，10.7 秒后重试（第 1/5 次）
+2026-11-26 09:47:07 WARNING     HTTP 503，20.2 秒后重试（第 2/5 次）
+2026-11-26 09:47:28 INFO     请求成功：HTTP 200，用时 0.8 秒
+2026-11-26 09:47:28 INFO [en:snacks] 第 2 页完成：收到 5 条，新增 5 条，重复 0 条，累计唯一产品 10 条
+2026-11-26 09:47:28 INFO 品类 en:snacks 达到本次最大页数 2，保留断点（下次从第 3 页继续）
+2026-11-26 09:47:28 INFO ----------------------------------------------------------------
+2026-11-26 09:47:28 INFO 采集结束：唯一产品共 10 条
+2026-11-26 09:47:28 INFO 原始页面：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\raw\pages
+2026-11-26 09:47:28 INFO 产品汇总：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\products.jsonl
+2026-11-26 09:47:28 INFO 断点状态：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\state.json
+2026-11-26 09:47:28 INFO 运行汇总：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\crawl_summary.json
+2026-11-26 09:47:37 INFO ================================================================
+2026-11-26 09:47:37 INFO Open Food Facts 零食标签采集器
+2026-11-26 09:47:37 INFO 配置文件：D:\大学\大三上\Snack-Ingredient-Screening\crawler\config.json
+2026-11-26 09:47:37 INFO 输出目录：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output
+2026-11-26 09:47:37 INFO 国家/地区标签：en:china
+2026-11-26 09:47:37 INFO 品类：en:snacks, en:biscuits, en:chocolates, en:candies, en:nuts, en:crisps, en:cookies
+2026-11-26 09:47:37 INFO 分页大小：100；请求间隔：4.0 秒；最大重试：5 次；退避基准：10.0 秒
+2026-11-26 09:47:37 INFO User-Agent：SnackDB-CourseProject/1.0 (student course project; contact: 2482799022@qq.com)
+2026-11-26 09:47:37 INFO ================================================================
+2026-11-26 09:47:37 WARNING 国家或分页大小与上次不同，断点状态已重置
+2026-11-26 09:47:37 INFO [en:snacks] 第 1 页已存在，直接复用
+2026-11-26 09:47:37 INFO [en:snacks] 第 1 页完成：收到 5 条，新增 0 条，重复 5 条，累计唯一产品 10 条
+2026-11-26 09:47:37 INFO 品类 en:snacks 采集完成（本页不足一页）
+2026-11-26 09:47:37 INFO [en:biscuits] 请求第 1 页：https://world.openfoodfacts.org/api/v2/search?categories_tags=en:biscuits&countries_tags=en:china&page_size=100&page=1&fields=code,product_name,product_name_zh,generic_name,brands,categories_tags,ingredients_text,ingredients_text_zh,allergens_tags,additives_tags,nutriments,quantity,serving_size,url,last_modified_t,countries_tags
+2026-11-26 09:47:38 WARNING     HTTP 503，10.3 秒后重试（第 1/5 次）
+2026-11-26 09:47:49 WARNING     HTTP 503，20.3 秒后重试（第 2/5 次）
+2026-11-26 09:48:12 INFO     请求成功：HTTP 200，用时 2.4 秒
+2026-11-26 09:48:12 INFO [en:biscuits] 第 1 页完成：收到 44 条，新增 43 条，重复 1 条，累计唯一产品 53 条
+2026-11-26 09:48:12 INFO 品类 en:biscuits 采集完成（已到总数 44）
+2026-11-26 09:48:16 INFO [en:chocolates] 请求第 1 页：https://world.openfoodfacts.org/api/v2/search?categories_tags=en:chocolates&countries_tags=en:china&page_size=100&page=1&fields=code,product_name,product_name_zh,generic_name,brands,categories_tags,ingredients_text,ingredients_text_zh,allergens_tags,additives_tags,nutriments,quantity,serving_size,url,last_modified_t,countries_tags
+2026-11-26 09:48:19 WARNING     HTTP 503，10.0 秒后重试（第 1/5 次）
+2026-11-26 09:48:32 INFO     请求成功：HTTP 200，用时 3.3 秒
+2026-11-26 09:48:32 INFO [en:chocolates] 第 1 页完成：收到 27 条，新增 27 条，重复 0 条，累计唯一产品 80 条
+2026-11-26 09:48:32 INFO 品类 en:chocolates 采集完成（已到总数 27）
+2026-11-26 09:48:36 INFO [en:candies] 请求第 1 页：https://world.openfoodfacts.org/api/v2/search?categories_tags=en:candies&countries_tags=en:china&page_size=100&page=1&fields=code,product_name,product_name_zh,generic_name,brands,categories_tags,ingredients_text,ingredients_text_zh,allergens_tags,additives_tags,nutriments,quantity,serving_size,url,last_modified_t,countries_tags
+2026-11-26 09:48:38 WARNING     HTTP 503，11.0 秒后重试（第 1/5 次）
+2026-11-26 09:48:51 INFO     请求成功：HTTP 200，用时 2.7 秒
+2026-11-26 09:48:51 INFO [en:candies] 第 1 页完成：收到 18 条，新增 18 条，重复 0 条，累计唯一产品 98 条
+2026-11-26 09:48:51 INFO 品类 en:candies 采集完成（已到总数 18）
+2026-11-26 09:48:54 WARNING 收到中断信号，正在保存断点...
+2026-11-26 09:48:54 INFO ----------------------------------------------------------------
+2026-11-26 09:48:54 INFO 采集结束：唯一产品共 98 条
+2026-11-26 09:48:54 INFO 原始页面：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\raw\pages
+2026-11-26 09:48:54 INFO 产品汇总：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\products.jsonl
+2026-11-26 09:48:54 INFO 断点状态：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\state.json
+2026-11-26 09:48:54 INFO 运行汇总：D:\大学\大三上\Snack-Ingredient-Screening\crawler\output\crawl_summary.json

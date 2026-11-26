@@ -15,6 +15,6 @@
   "timeout_seconds": 30,
   "max_retries": 5,
   "backoff_base_seconds": 10.0,
-  "user_agent": "SnackDB-CourseProject/1.0 (student course project; contact: your-email@example.com)",
+  "user_agent": "SnackDB-CourseProject/1.0 (student course project; contact: 2482799022@qq.com)",
   "output_dir": "output"
 }
